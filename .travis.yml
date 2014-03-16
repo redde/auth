@@ -7,5 +7,5 @@ rvm:
   - 2.0.0
   - 2.1.0
 before_script:
-  - "rake db:create RAILS_ENV=test"
-  - "rake db:migrate RAILS_ENV=test"
+  - "cd spec/dummy; rake db:create RAILS_ENV=test"
+  - "cd spec/dummy; rake db:migrate RAILS_ENV=test"
